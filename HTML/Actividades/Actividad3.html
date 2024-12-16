@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tabla de contenido</title>
+</head>
+<body>
+    <table>
+        <caption>Contenido del Libro</caption>
+        <colgroup>
+            <col style="width: 10%;">
+            <col style="width: 50%;">
+            <col style="width: 20%;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="3">Contenido del Libro</th>
+            </tr>
+            <tr>
+                <th>Capítulo</th>
+                <th>Título del Capítulo</th>
+                <th>Páginas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Fila para el Capítulo 1 -->
+            <tr>
+                <td rowspan="2">1</td>
+                <td>Introducción al Libro</td>
+                <td>1-10</td>
+            </tr>
+            <tr>
+                <td>Historia de la Literatura</td>
+                <td>11-20</td>
+            </tr>
+            <!-- Fila para el Capítulo 2 -->
+            <tr>
+                <td rowspan="3">2</td>
+                <td>El Mundo Antiguo</td>
+                <td>21-40</td>
+            </tr>
+            <tr>
+                <td>Sociedades Primitivas</td>
+                <td>41-60</td>
+            </tr>
+            <tr>
+                <td>Civilización Mesopotámica</td>
+                <td>61-80</td>
+            </tr>
+            <!-- Fila para el Capítulo 3 -->
+            <tr>
+                <td>3</td>
+                <td>El Imperio Romano</td>
+                <td>81-100</td>
+            </tr>
+            <!-- Fila para el Capítulo 4 -->
+            <tr>
+                <td>4</td>
+                <td>La Edad Media</td>
+                <td>101-120</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Fin del Contenido</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+</head>
+<body>
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Información Personal</legend>
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label>Género</label>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="femenino" name="genero" value="femenino" required>
+            <label for="femenino">Femenino</label>
+
+            <input type="radio" id="otro" name="genero" value="otro" required>
+            <label for="otro">Otro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Contacto</legend>
+            
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Número de Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="direccion">Dirección</label>
+            <textarea id="direccion" name="direccion"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información de Cuenta</legend>
+            
+            <label for="usuario">Nombre de Usuario</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+
+            <label for="confirmarContrasena">Confirmación de Contraseña</label>
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            
+            <label for="colorFavorito">Seleccionar un Color Favorito</label>
+            <select id="colorFavorito" name="colorFavorito" required>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
+                <option value="verde">Verde</option>
+                <option value="amarillo">Amarillo</option>
+            </select>
+
+            <label for="terminosCondiciones">
+                <input type="checkbox" id="terminosCondiciones" name="terminosCondiciones" required>
+                Acepto los Términos y Condiciones
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button> <!--Este es el boton para que se envie el formulario y se reinicie-->
+    </form>
+</body>
+</html>
