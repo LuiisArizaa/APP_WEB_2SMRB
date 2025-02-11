@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 5%;
+}
+
+#caja {
+    width: 30%;
+    height: 30rem;
+    background-color: blue;
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+
+button {
+    display: block;
+    width: 30%;
+    padding: 1.5rem 0;
+    font-size: 1.2rem;
+    background-color: green;
+    color: white;
+    border: none;
+    margin: 0 auto;
+}
