@@ -1,0 +1,100 @@
+:root {
+    --header-bg: #FFECD1;
+    --text-color: #07BEB8;
+    --bg-simple: red;
+    --bg-hex: #3DCCC7;
+    --btn-border: black;
+    --btn-text: black;
+    --highlight-color: #00CFFF; /*Le pongo color Azul cielo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+.header {
+    background-color: var(--header-bg);
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* Contenedor principal (pantalla completa) */
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-simple); /* Le pongo Fondo rojo  */
+    width: 100%;
+}
+
+/* Versión hexadecimal con fondo azul */
+.hex .main {
+    background-color: var(--bg-hex);
+}
+
+/* Caja del título del color */
+.color-container {
+    background: black; /* Fondo negro */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-bottom: 1rem; /* Separa del botón */
+}
+
+/* Título con palabra destacada */
+.color-text {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.color-highlight {
+    color: var(--highlight-color); /* Azul cielo */
+    font-weight: bold;
+}
+
+/* Botón */
+.btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: 0.1rem solid var(--btn-border);
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--btn-text);
+    border-radius: 0.5rem;
+}
