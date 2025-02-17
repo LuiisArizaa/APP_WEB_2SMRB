@@ -46,7 +46,7 @@ fieldset {
     list-style: none;
     padding: 2rem;
     background-color: beige;
-    width: 84%;
+    width: 79%;
 }
 
 .lista li {
@@ -57,7 +57,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 84%;
     max-width: 18rem;
 }
 

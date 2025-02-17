@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
-
+    
+    //Guardo en una variable el siguiente array que voy a utilizar de ejemplo para el ejercicio
     const frasesFrikisInformatica = [
         "Los programadores no tienen errores, solo experiencias inesperadas.",
         "La programación es como montar en bicicleta: una vez que lo aprendes, nunca lo olvidas.",
@@ -13,9 +14,11 @@ document.addEventListener("DOMContentLoaded", function(){
         "La informática es como una montaña rusa: emocionante y llena de giros inesperados."
     ];
     
+    //Selecciono las clases que voy a utilizar
     const titulo = document.querySelector(".titulo");
     const boton = document.querySelector(".boton");
-
+    
+    //Creo la funcion de aleatorio
     function generarFraseAleatoria() {
         const indiceAleatorio = Math.floor(Math.random() * frasesFrikisInformatica.length);
         titulo.textContent = frasesFrikisInformatica[indiceAleatorio];

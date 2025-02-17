@@ -11,30 +11,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (tareaTexto !== " ") {
            
-            // Crear un nuevo elemento de lista
+            // Si la lista esta vacía crei un nuevo elemento de lista
             const nuevaTarea = document.createElement("li");
             nuevaTarea.textContent = "Nueva Tarea " + numeroTarea + ": " + tareaTexto;
 
-            // Crear botón de eliminar
+            // Creo el botón de eliminar, utilizando la clase del css
             const botonEliminar = document.createElement("button");
             botonEliminar.textContent = "x";
             botonEliminar.classList.add("deleteBtn");
             
-            // Evento para eliminar tarea
+            // Creo el evento para eliminar tarea es decir para llamar a la tarea.
             botonEliminar.addEventListener("click", function() {
                 listaTareas.removeChild(nuevaTarea);
             });
 
-            // Agregar botón a la tarea y tarea a la lista
+            // Agrego el nuevo botón a la tarea y la tarea a la lista
             nuevaTarea.appendChild(botonEliminar);
             listaTareas.appendChild(nuevaTarea);
 
-            // Limpiar el campo de texto
+            // Limpio el campo de texto
             inputTarea.value = " ";
         }
     }
 
-    // Evento para agregar tarea cuando se haga clic en el botón
+    // Creo el evento para agregar tarea y llamar a la funcion, cuando se haga clic en el botón.
     botonAgregar.addEventListener("click", function(event) {
         event.preventDefault();   //Esto lo pongo para que se quede en el fron y cuando le doy a agregar tarea no se recarge y pueda seguir añadiendose tareas
         addTask();

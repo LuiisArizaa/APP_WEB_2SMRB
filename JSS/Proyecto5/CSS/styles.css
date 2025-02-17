@@ -1,27 +1,26 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #91918eb5;
     text-align: center;
     padding: 2rem;
-
 }
 
-fieldset{
+fieldset {
     background-color: beige;
     border: none;
+    padding: 2rem;
     border-radius: 1rem;
-    padding: 2rem 15rem;
     margin: auto;
-}
-
-.formulario {
-    margin-bottom: 1.5rem;
 }
 
 .titulo {
     font-size: 1.5rem;
     color: #333;
+}
+
+.formulario {
+    margin-bottom: 1.5rem;
 }
 
 .formulario__input {
@@ -32,8 +31,8 @@ fieldset{
 }
 
 .formulario__boton {
-    padding: 0.6rem 1rem;
-    background-color: #063f13;
+    padding: 0.7rem 2.5rem;
+    background-color: #073311;
     color: white;
     border: none;
     border-radius: 0.3rem;
@@ -41,26 +40,29 @@ fieldset{
 }
 
 .formulario__boton:hover {
-    background-color: #288e3d;
+    background-color: #218838;
 }
 
-.lista{
+.lista {
     list-style: none;
-    padding: 0;
+    padding: 2rem;
+    background-color: beige;
+    width: 79%;
 }
 
 .lista li {
-    background-color: white;
+    background: beige;
     margin: 0.3rem auto;
     padding: 0.6rem;
     border-radius: 0.3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 84%;
+    max-width: 18rem;
 }
 
-.delete-btn {
+.deleteBtn {
     background-color: #dc3545;
     color: white;
     border: none;
@@ -72,3 +74,12 @@ fieldset{
     background-color: #c82333;
 }
 
+.boton__aleatorio {
+    padding: 0.6rem 2rem;
+    background-color: cyan;
+    border-radius: 0.3rem;
+}
+
+.boton__aleatorio:hover {
+    background-color: #30828d;
+}
